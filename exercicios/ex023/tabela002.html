@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(0, 0, 0);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +57,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,18 +66,13 @@
                 TR, TD, TH
     -->
     <table>
+        <CAption>População das Unidades Federativas</CAption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>210.147.125</strong></td>
-            </tr>
-        </tfoot>
         <tbody>
             <tr>
                 <td> São Paulo</td>
@@ -165,6 +183,17 @@
                 <td class="num">652 713	</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates totam nihil vero sit quia iure aliquid obcaecati nesciunt earum, numquam velit illum error fugiat modi, enim laudantium. Ut, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minus cumque voluptatibus facilis deserunt quis doloribus consectetur molestiae, numquam consequuntur maiores nemo quas ipsa nulla facere sit impedit soluta quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse exercitationem fugiat necessitatibus assumenda cupiditate, totam quae nulla dolorem qui adipisci sequi corporis optio numquam neque ab dolores laudantium quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim voluptatum corporis eveniet rerum dicta temporibus quibusdam cupiditate eum sequi iure recusandae ipsa, dolorum quia cumque. Mollitia voluptates neque sit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates totam nihil vero sit quia iure aliquid obcaecati nesciunt earum, numquam velit illum error fugiat modi, enim laudantium. Ut, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minus cumque voluptatibus facilis deserunt quis doloribus consectetur molestiae, numquam consequuntur maiores nemo quas ipsa nulla facere sit impedit soluta quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse exercitationem fugiat necessitatibus assumenda cupiditate, totam quae nulla dolorem qui adipisci sequi corporis optio numquam neque ab dolores laudantium quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim voluptatum corporis eveniet rerum dicta temporibus quibusdam cupiditate eum sequi iure recusandae ipsa, dolorum quia cumque. Mollitia voluptates neque sit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates totam nihil vero sit quia iure aliquid obcaecati nesciunt earum, numquam velit illum error fugiat modi, enim laudantium. Ut, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minus cumque voluptatibus facilis deserunt quis doloribus consectetur molestiae, numquam consequuntur maiores nemo quas ipsa nulla facere sit impedit soluta quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse exercitationem fugiat necessitatibus assumenda cupiditate, totam quae nulla dolorem qui adipisci sequi corporis optio numquam neque ab dolores laudantium quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim voluptatum corporis eveniet rerum dicta temporibus quibusdam cupiditate eum sequi iure recusandae ipsa, dolorum quia cumque. Mollitia voluptates neque sit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates totam nihil vero sit quia iure aliquid obcaecati nesciunt earum, numquam velit illum error fugiat modi, enim laudantium. Ut, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minus cumque voluptatibus facilis deserunt quis doloribus consectetur molestiae, numquam consequuntur maiores nemo quas ipsa nulla facere sit impedit soluta quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse exercitationem fugiat necessitatibus assumenda cupiditate, totam quae nulla dolorem qui adipisci sequi corporis optio numquam neque ab dolores laudantium quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim voluptatum corporis eveniet rerum dicta temporibus quibusdam cupiditate eum sequi iure recusandae ipsa, dolorum quia cumque. Mollitia voluptates neque sit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates totam nihil vero sit quia iure aliquid obcaecati nesciunt earum, numquam velit illum error fugiat modi, enim laudantium. Ut, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minus cumque voluptatibus facilis deserunt quis doloribus consectetur molestiae, numquam consequuntur maiores nemo quas ipsa nulla facere sit impedit soluta quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse exercitationem fugiat necessitatibus assumenda cupiditate, totam quae nulla dolorem qui adipisci sequi corporis optio numquam neque ab dolores laudantium quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim voluptatum corporis eveniet rerum dicta temporibus quibusdam cupiditate eum sequi iure recusandae ipsa, dolorum quia cumque. Mollitia voluptates neque sit.</p>
 </body>
 </html>
