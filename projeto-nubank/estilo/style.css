@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: lato;
+}
+
+section.primeira {
+    background-color: blueviolet;
+    padding: 100px;
+}
+
+div.futuro {
+    display: block;
+    width: 400px;
+    color: white;
+}
+
+div.cpf {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
