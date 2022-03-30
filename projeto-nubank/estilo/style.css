@@ -1,28 +1,26 @@
 @charset "utf-8";
 
-#primeira {
-    background-image: url('../imagens/pessoa-1.jpg');
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 2000px;
-}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
 
-.futuro {
-    display: inline-block;
-}
+  section, main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      border: 1px solid red;
+  }
 
-.cpf {
-    background-color: white;
-    display: inline-block;
-}
+  .principal {
+    background-image: url(../imagens/pessoa-1.jpg);
+  }
 
-.futuro, .cpf {
-    border-radius: 10px;
-    padding: 20px;
-    text-align-last: auto;
-}
-
-#catao-01 {
-    max-width: 500px;
-    max-height: 500px;
-}
+  .card-input {
+      background-color: white;
+      display: ;
+      height: 300px;
+      width: 250px;
+  }
